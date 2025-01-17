@@ -119,6 +119,36 @@ gap: 24px;
     font-size: 2.8rem;
     font-weight: 700;
 }
+.fact-description{
+    max-width: 542px;
+}
+
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+.fact-container > .fact{
+    max-width: 200px;
+    max-height: 200px;
+    border: 1px solid #FF900E;
+    justify-items: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 8px;
+}
+.fact-container > .fact > .fact-number{
+    font-size: 2.8rem;
+    margin: 10px;
+
+}
+.fact-container > .fact > .fact-name{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
 
 
 /* responsive media query */
@@ -134,5 +164,13 @@ gap: 24px;
     .our-features{
         margin-left: 20px;
     }
+    .fact-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+        /* justify-content: center; */
+        justify-items: center;
+        
+    }
+   
    
 }
